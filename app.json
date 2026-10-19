@@ -1,0 +1,54 @@
+{
+  "expo": {
+    "name": "QR-ATT",
+    "slug": "QR-ATT",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/android-icon-foreground.png",
+    "scheme": "qr-attendance",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#6D28D9",
+        "foregroundImage": "./assets/images/android-icon-foreground.png"
+      },
+      "blockedPermissions": [
+        "android.permission.RECORD_AUDIO"
+      ],
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false,
+      "package": "com.bosspao.QRATT"
+    },
+    "web": {
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#F7F2FF"
+        }
+      ],
+      "@react-native-community/datetimepicker",
+      "expo-secure-store"
+    ],
+    "experiments": {
+      "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "7a47b5f9-d71a-48d1-9ec9-5058d2766874"
+      }
+    }
+  }
+}
