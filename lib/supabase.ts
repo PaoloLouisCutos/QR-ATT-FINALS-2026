@@ -22,8 +22,15 @@ removeItem: (key: string) => SecureStore.deleteItemAsync(key),
 };
 
 const storage = Platform.OS === 'web' ? webStorage : ExpoSecureStoreAdapter;
-const supabaseUrl = process.env.EXPO_PUBLIC_SUPABASE_URL!;
-const supabaseAnonKey = process.env.EXPO_PUBLIC_SUPABASE_ANON_KEY!;
+
+// These are public client credentials, not secrets. Access is enforced by
+// Supabase Row Level Security. Keep fallbacks so release builds do not crash
+// when EAS environment variables are unavailable.
+const DEFAULT_SUPABASE_URL = 'https://dmahiovxwmlvjydutjyw.supabase.co';
+const DEFAULT_SUPABASE_ANON_KEY = 'sb_publishable_TvQikBUZ4Dz_bZ-OVrQ7nw_xcQWuCmX';
+
+const supabaseUrl = process.env.EXPO_PUBLIC_SUPABASE_URL || DEFAULT_SUPABASE_URL;
+const supabaseAnonKey = process.env.EXPO_PUBLIC_SUPABASE_ANON_KEY || DEFAULT_SUPABASE_ANON_KEY;
 export const supabase = createClient(supabaseUrl, supabaseAnonKey, {
 auth: {
  storage,
