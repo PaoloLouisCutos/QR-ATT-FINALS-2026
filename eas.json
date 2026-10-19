@@ -9,16 +9,16 @@
       "distribution": "internal",
       "environment": "development",
       "env": {
-        "EXPO_PUBLIC_SUPABASE_URL": "https://dmahiovxwmlvjydutjyw.supabase.co",
-        "EXPO_PUBLIC_SUPABASE_ANON_KEY": "sb_publishable_TvQikBUZ4Dz_bZ-OVrQ7nw_xcQWuCmX"
+        "EXPO_PUBLIC_SUPABASE_URL": "https://hbrycjzzbthvlxjvvkix.supabase.co",
+        "EXPO_PUBLIC_SUPABASE_ANON_KEY": "sb_publishable_EvjIn0ZjItuN4Wdl5PpcfQ_h3NGhmzR"
       }
     },
     "preview": {
       "distribution": "internal",
       "environment": "preview",
       "env": {
-        "EXPO_PUBLIC_SUPABASE_URL": "https://dmahiovxwmlvjydutjyw.supabase.co",
-        "EXPO_PUBLIC_SUPABASE_ANON_KEY": "sb_publishable_TvQikBUZ4Dz_bZ-OVrQ7nw_xcQWuCmX"
+        "EXPO_PUBLIC_SUPABASE_URL": "https://hbrycjzzbthvlxjvvkix.supabase.co",
+        "EXPO_PUBLIC_SUPABASE_ANON_KEY": "sb_publishable_EvjIn0ZjItuN4Wdl5PpcfQ_h3NGhmzR"
       }
     },
     "production": {
@@ -26,8 +26,8 @@
       "distribution": "store",
       "environment": "production",
       "env": {
-        "EXPO_PUBLIC_SUPABASE_URL": "https://dmahiovxwmlvjydutjyw.supabase.co",
-        "EXPO_PUBLIC_SUPABASE_ANON_KEY": "sb_publishable_TvQikBUZ4Dz_bZ-OVrQ7nw_xcQWuCmX"
+        "EXPO_PUBLIC_SUPABASE_URL": "https://hbrycjzzbthvlxjvvkix.supabase.co",
+        "EXPO_PUBLIC_SUPABASE_ANON_KEY": "sb_publishable_EvjIn0ZjItuN4Wdl5PpcfQ_h3NGhmzR"
       },
       "android": {
         "buildType": "app-bundle"
